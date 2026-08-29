@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> perfect day</title>
+    <link rel="stylesheet" href="perfect day.css">
+    </head>
+    <body>
+        <div class="page">
+    <div class="scene scene1" id="scene1"><h1 id="title"> A PERFECT DAY </h1>
+       <button id="button1" onclick="nextScene()"> BEGIN YOUR DAY </button>
+<div class="cloud cloud1">  
+    <div class="bump bump1"></div>
+    <div class="bump bump2"></div>
+    <div class="bump bump3"></div>
+ <p class="quote">Today is a perfect day</p></div>
+<div class="cloud cloud2"> 
+     <div class="bump bump1"></div>
+    <div class="bump bump2"></div>
+    <div class="bump bump3"></div>
+<p class="quote"> To have a perfect day</p></div>
+</div>
+
+<div class="scene scene2" id="scene2">
+    <h1> MORNING </h1>
+    <P> 8:00 AM</P>
+    <h2>How will u proceed?</h2>
+<div class="choices">
+    <button class="choiceButton" onclick="chooseBreakfast('cook')">
+        You cook breakfast 🍳
+    </button>
+
+    <button class="choiceButton" onclick="chooseBreakfast('cafe')">
+        You go out for breakfast 🥐
+    </button>
+
+    <button class="choiceButton" onclick="chooseBreakfast('scroll')">
+        You scroll 📱
+    </button>
+</div>
+</div>
+
+<!-- COOK BREAKFAST SCENE -->
+<div class="scene cookScene" id="cookScene">
+
+    <h1 id="cookText">You take out the eggs...</h1>
+
+    <p id="cookThen"></p>
+
+    <div class="choices">
+        <button id="cookContinue" onclick="showEggError()">
+            Continue
+        </button>
+    </div>
+
+</div>
+
+<!-- AFTER EGG ERROR -->
+<div class="scene" id="eggChoiceScene">
+
+    <h1>You dropped the eggs everywhere. 😭</h1>
+
+    <div class="choices">
+
+    <button onclick="goToMall('party')">
+    🧹 Clean up the mess
+     </button>
+
+<button onclick="goToMall('tired')">
+    🚪 Leave it
+</button>
+
+    </div>
+
+</div>
+
+
+<div class="scene" id="cafeScene">
+
+    <h1 id="cafeText">
+        You were heading down to the cafe...
+    </h1>
+
+    <p id="cafeThen"></p>
+
+    <div class="choices">
+
+     <button onclick="showScene('makeoverScene')">
+            🌧️ Continue anyways
+        </button>
+
+        <button onclick="goToMall('party')">
+            🏠 Go back and change
+        </button>
+    </div>
+
+</div>
+
+<div class="scene" id="scrollScene">
+
+    <h1>2 hours went by...</h1>
+
+    <p id="scrollThen"></p>
+
+    <div class="choices">
+
+        <button onclick="showMovieError()">
+            🎟️ Get the ticket
+        </button>
+
+        <button onclick="showScene('millionaireScene')">
+            🚶 Ignore it
+        </button>
+
+    </div>
+
+</div>
+<!-- MALL SCENE -->
+
+<div class="scene" id="mallScene">
+
+    <h1>You go out to the mall...</h1>
+
+    <p>
+        You find the perfect dress.
+        It's the last one in stock!
+    </p>
+
+    <button onclick="goHomeFromMall()">
+        Back Home
+    </button>
+
+</div>
+<!-- TIRED HOME SCENE -->
+
+<div class="scene" id="tiredHomeScene">
+
+    <h1>You finally get home...</h1>
+
+    <p>
+        You clean up the mess, order takeout because you're tired,
+        and settle down to watch a movie.
+    </p>
+<button class="results"  onclick="showEndingResult('tiredHomeScene')">PRESS</button>
+</div>
+
+
+<!-- PARTY SCENE -->
+
+<div class="scene" id="partyScene">
+
+    <h1>You get home, get ready ✨</h1>
+
+    <p>
+        You don your new dress and head out to party.
+    </p>
+<button class="results" onclick="showEndingResult('partyScene')">Click</button>
+</div>
+<!-- MAKEOVER SCENE -->
+
+<div class="scene" id="makeoverScene">
+
+    <h1>After your breakfast...</h1>
+
+    <p>
+        Someone approaches you and offers you a free makeover! ✨
+    </p>
+
+    <button onclick="showScene('dreamJobScene')">
+        Continue
+    </button>
+
+</div>
+
+
+<!-- MOVIE NOT AVAILABLE → CONCERT -->
+
+<div class="scene" id="concertScene">
+
+    <h1>Movie night... cancelled! 🎬❌</h1>
+
+    <p>
+        The movie is no longer available.
+    </p>
+
+    <p>
+        You find out your friend was there for the same reason,
+        so you both decide to go to a concert of your favorite artist instead! 🎤
+    </p>
+
+    <button onclick="showScene('concertEndScene')">
+        Go to the concert 🎶
+    </button>
+
+</div>
+
+
+<!-- CONCERT END -->
+
+<div class="scene" id="concertEndScene">
+
+    <h1>BEST. DECISION. EVER. 🎤✨</h1>
+
+    <p>
+        You and your friend have an amazing time at the concert.
+    </p>
+<button class="results" onclick="showEndingResult('concertEndScene')"> PRESS</button>
+</div>
+
+
+<!-- IGNORE MOVIE → MILLION DOLLARS -->
+
+<div class="scene" id="millionaireScene">
+
+    <h1>Your stroll continues... 🚶</h1>
+
+    <p>
+        You decide to forget about the movie and keep walking.
+    </p>
+
+    <p>
+        At the end of your stroll, you notice something on the ground...
+    </p>
+
+    <button onclick="showMillionaireResult()">
+        See what it is 👀
+    </button>
+
+</div>
+
+
+<!-- MILLION DOLLAR RESULT -->
+
+<div class="scene" id="millionaireResultScene">
+
+    <h1>YOU FOUND A MILLION DOLLARS?! 💰</h1>
+
+    <p>
+        Somehow, your perfectly ordinary stroll just became
+        the luckiest moment of your life.
+    </p>
+    <button class="results" onclick="showEndingResult('millionaireResultScene')"> JS PRESS IT</button>
+
+</div>
+
+<!-- HILLARY SUPER / DREAM JOB SCENE -->
+
+<div class="scene" id="dreamJobScene">
+
+    <h1>✨ Wait... Someone Stops You!</h1>
+
+    <p>
+        Just after your makeover, someone approaches you...
+    </p>
+
+    <p>
+        It's Hillary Super!
+    </p>
+
+    <p>
+        She tells you that she has an opportunity
+        that is perfect for you...
+    </p>
+
+    <h2>She offers you your DREAM JOB! 💼✨</h2>
+
+    <button class="results" onclick="showEndingResult('dreamJobScene')">
+        Accept the job! 🎉
+    </button>
+
+</div>
+
+<div class="scene" id="tiredHomeResultScene">
+    <h1>THE CHILL ONE</h1>
+    <p>You kept things calm, cozy, and comfortable, and it turned out to be the perfect kind of peaceful day.</p>
+    <button onclick="showScene('scene1')">Restart</button>
+</div>
+
+<div class="scene" id="partyResultScene">
+    <h1>RESPONSIBLE ONE</h1>
+    <p>You stayed grounded, made thoughtful choices, and still had a life full of sparkle and fun.</p>
+    <button onclick="showScene('scene1')">Restart</button>
+</div>
+
+<div class="scene" id="concertResultScene">
+    <h1>OPTIMIST</h1>
+    <p>You chose joy, laughter, and music, and your day turned into a bright memory worth replaying.</p>
+    <button onclick="showScene('scene1')">Restart</button>
+</div>
+
+<div class="scene" id="millionaireResultEndScene">
+    <h1>BEAUTIFUL DISASTER</h1>
+    <p>You turned chaos into a lucky twist and somehow made the messiest moment become the highlight of your day.</p>
+    <button onclick="showScene('scene1')">Restart</button>
+</div>
+
+<div class="scene" id="dreamJobResultScene">
+    <h1>ADVENTURER</h1>
+    <p>You followed bold opportunities and stepped into the perfect future with confidence and excitement.</p>
+    <button onclick="showScene('scene1')">Restart</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- ERROR POPUP -->
+<div class="errorOverlay" id="eggError">
+
+    <div class="errorBox">
+
+        <div class="errorImage errorImageEgg" aria-hidden="true"></div>
+
+        <div class="errorContent">
+            <h2>⚠️ OH NO!</h2>
+
+            <p>You dropped the eggs.</p>
+
+            <button onclick="closeEggError()">
+                Continue
+            </button>
+        </div>
+
+    </div>
+
+</div>
+<!-- MOVIE UNAVAILABLE POPUP -->
+
+<div class="errorOverlay" id="movieError">
+
+    <div class="errorBox">
+
+        <div class="errorImage errorImageMovie" aria-hidden="true"></div>
+
+        <div class="errorContent">
+
+            <h2>⚠️ OH NO!</h2>
+
+            <p>The movie is no longer available.</p>
+
+            <button onclick="closeMovieError()">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+        <script src="perfect day.js"></script>
+    </body>
+</html>
