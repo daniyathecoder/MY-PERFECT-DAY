@@ -22,6 +22,16 @@ left: 0;
     position: relative;
     height: 100vh;
 }
+#button1 {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(222, 253, 148);
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: navy;
+    
+}
 .choices {
     display: flex;
     flex-direction: row;
@@ -230,6 +240,15 @@ left: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.eggChoiceScene {
+    background-image:url(https://static.vecteezy.com/system/resources/thumbnails/066/667/040/small/broken-eggshells-with-yolks-food-ingredient-raw-egg-protein-isolate-transparent-background-free-png.png) ;
+    background-color: rgb(188, 190, 20);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
 .cafeScene {background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS449QLUfJXfB2HjlOFyKFcoLatxPuung7Lo_rOraw_GYB8EJlAUgcvAkY&s=10) ;
     background-color: rgb(63, 12, 129);
     background-size: cover;
@@ -255,7 +274,7 @@ left: 0;
 
 }
 .mallScene {
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTsiforHzjxo4RidLyykgoyOu3yXQHMh8sM4qb0m3Fi3zZccWEGM7sZh7f&s=10) ;
+    background-image:url(https://thumbs.dreamstime.com/b/futuristic-luxury-shopping-mall-interior-view-down-long-gleaming-corridor-center-polished-floors-reflect-bright-cool-406425587.jpg) ;
     background-color: rgb(10, 104, 167);
     background-size: cover;
     background-position: center;
@@ -298,8 +317,8 @@ left: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.partyResultScene {
-    background-image:url() ;
+#partyResultScene {
+    background-image:url(https://i.pinimg.com/1200x/a4/11/db/a411db113ce133382b6c6ff25bbf935e.jpg) ;
     background-color: rgb(215, 248, 26);
     background-size: cover;
     background-position: center;
@@ -341,7 +360,7 @@ background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSmD
     background-attachment: fixed;
 }
 .partyScene {
-    background-image:url(https://static.vecteezy.com/system/resources/thumbnails/041/640/048/small/ai-generated-hanging-party-flags-in-watercolor-cut-out-party-flag-on-transparent-background-png.png) ;
+    background-image:url(https://i.pinimg.com/736x/f6/b7/60/f6b7605cb3e25204b007d7b82a9ee3b5.jpg) ;
     background-color: rgb(233, 15, 124);
     background-size: cover;
     background-position: center;
@@ -355,4 +374,189 @@ background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSmD
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#eggChoiceScene {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/051/421/946/large_2x/fresh-broken-egg-in-kitchen-floor-photo.jpg);
+    background-color: rgb(162, 238, 168);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cafeScene {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS449QLUfJXfB2HjlOFyKFcoLatxPuung7Lo_rOraw_GYB8EJlAUgcvAkY&s=10);
+    background-color: rgb(63, 12, 129);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#scrollScene {
+    background-image: url(https://thumbs.dreamstime.com/b/cozy-bedroom-pixel-art-style-pink-decor-featuring-mix-modern-nostalgic-elements-creating-unique-vibrant-space-332392936.jpg);
+    background-color: rgb(15, 200, 233);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#mallScene {
+    background-image: url(https://thumbs.dreamstime.com/b/futuristic-luxury-shopping-mall-interior-view-down-long-gleaming-corridor-center-polished-floors-reflect-bright-cool-406425587.jpg);
+    background-color: rgb(10, 104, 167);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration-color: darkred;
+}
+
+#tiredHomeScene {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJSmDpZXl3NS44l_hSXtaAXNuP-NVDZCd8Lo8xz-45VUK8icCz7z_5moX8&s=10);
+    background-color: rgb(233, 15, 124);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partyScene {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/041/640/048/small/ai-generated-hanging-party-flags-in-watercolor-cut-out-party-flag-on-transparent-background-png.png);
+    background-color: rgb(233, 15, 124);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#makeoverScene {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9MKfPcaKX3jh46r8i2IO2KrJaoAPobt5tsYobuk8tG5wt7vq8C2BpwJU&s=10);
+    background-color: rgb(233, 15, 124);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#concertScene {
+    background-image: url(https://www.shutterstock.com/image-photo/old-cinema-front-now-showing-260nw-2637483837.jpg);
+    background-color: cornflowerblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#concertEndScene {
+    background-image: url(https://png.pngtree.com/background/20230610/original/pngtree-group-of-minecraft-characters-posing-and-waiting-to-go-home-picture-image_3019240.jpg);
+    background-color: rgb(82, 147, 245);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#millionaireScene,
+#millionaireResultScene,
+#millionaireResultEndScene {
+    background-image: url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&w=1600&q=80);
+    background-color: rgb(233, 190, 30);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tiredHomeResultScene {
+    background-image: url(https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80);
+    background-color: rgb(125, 238, 91);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#partyResultScene {
+    background-image: url(https://i.pinimg.com/736x/f6/b7/60/f6b7605cb3e25204b007d7b82a9ee3b5.jpg);
+    background-color: rgb(215, 85, 160);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#concertResultScene {
+    background-image: url(https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1600&q=80);
+    background-color: rgb(82, 147, 245);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dreamJobResultScene {
+    background-image: url(https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww);
+    background-color: rgb(233, 15, 15);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dreamJobScene {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20251203/pngtree-fashion-show-runway-stage-set-with-lighting-image_20711635.webp);
+    background-color: rgb(20, 114, 98);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Keep the ending screens readable over their image backgrounds. */
+#tiredHomeResultScene,
+#dreamJobScene,
+#dreamJobResultScene,
+#millionaireResultEndScene {
+    position: absolute;
+    isolation: isolate;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+#tiredHomeResultScene::before,
+#dreamJobScene::before,
+#dreamJobResultScene::before,
+#millionaireResultEndScene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+
+#tiredHomeResultScene > *,
+#dreamJobScene > *,
+#dreamJobResultScene > *,
+#millionaireResultEndScene > *,
+#millionaireResultScene > * {
+    position: relative;
+    z-index: 1;
+}
+
+#tiredHomeResultScene {
+    background-image: url(https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=80);
+}
+
+#dreamJobScene {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20251203/pngtree-fashion-show-runway-stage-set-with-lighting-image_20711635.webp);
+    color: #fff7d6;
+}
+
+#dreamJobResultScene {
+    background-image: url(https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww);
+    color: #fff;
+}
+
+#millionaireResultScene,
+#millionaireResultEndScene {
+    background-image: url(https://i.pinimg.com/736x/f4/b4/9c/f4b49c85f9b46927fc727451b61394f6.jpg);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+#millionaireResultScene::before,
+#millionaireResultEndScene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.45);
 }

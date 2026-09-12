@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> perfect day</title>
-    <link rel="stylesheet" href="perfect day.css">
+    <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="page">
@@ -101,7 +101,8 @@
 
     <h1>2 hours went by...</h1>
 
-    <p id="scrollThen"></p>
+    <h2 style="color: aliceblue;
+    text-align: center;" id="scrollThen"></h2>
 
     <div class="choices">
 
@@ -122,10 +123,10 @@
 
     <h1>You go out to the mall...</h1>
 
-    <p>
-        You find the perfect dress.
+    <h1 style="color: rgb(7, 58, 2); text-align: center;">
+        You find the <br> perfect dress.<br>
         It's the last one in stock!
-    </p>
+    </h1>
 
     <button onclick="goHomeFromMall()">
         Back Home
@@ -138,11 +139,12 @@
 
     <h1>You finally get home...</h1>
 
-    <p>
-        You clean up the mess, order takeout because you're tired,
-        and settle down to watch a movie.
+    <p><h2 style="color: aliceblue;">
+        You clean up the mess,<br>
+         order takeout because you're tired,<br>
+        and settle down to watch a movie.</h2>
     </p>
-<button class="results"  onclick="showEndingResult('tiredHomeScene')">PRESS</button>
+<button class="results"  onclick="showEndingResult('tiredHomeScene')">results?</button>
 </div>
 
 
@@ -184,9 +186,11 @@
         The movie is no longer available.
     </p>
 
-    <p>
-        You find out your friend was there for the same reason,
-        so you both decide to go to a concert of your favorite artist instead! 🎤
+    <p> <h2 style="color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;">
+        You find out your friend was there for the same reason, <br>
+        so you both decide to go to a concert <br> of your favorite artist instead! 🎤</h2>
     </p>
 
     <button onclick="showScene('concertEndScene')">
@@ -200,11 +204,15 @@
 
 <div class="scene" id="concertEndScene">
 
-    <h1>BEST. DECISION. EVER. 🎤✨</h1>
+    <h1 style="color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;">BEST. DECISION. EVER. 🎤✨</h1>
 
-    <p>
+    <h2 style="color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;">
         You and your friend have an amazing time at the concert.
-    </p>
+</h2>
 <button class="results" onclick="showEndingResult('concertEndScene')"> PRESS</button>
 </div>
 
@@ -279,19 +287,20 @@
 
 <div class="scene" id="partyResultScene">
     <h1>RESPONSIBLE ONE</h1>
-    <p>You stayed grounded, made thoughtful choices, and still had a life full of sparkle and fun.</p>
+    <p> <h2 style="color: rgb(216, 14, 91);">You stay grounded, make thoughtful choices,<br>
+         and still have a life full of sparkle and fun.</h2></p>
     <button onclick="showScene('scene1')">Restart</button>
 </div>
 
 <div class="scene" id="concertResultScene">
     <h1>OPTIMIST</h1>
-    <p>You chose joy, laughter, and music, and your day turned into a bright memory worth replaying.</p>
+    <p>You choose joy, and laughter, over pessimism, <br> and your days turn into a bright memory worth replaying.</p>
     <button onclick="showScene('scene1')">Restart</button>
 </div>
 
 <div class="scene" id="millionaireResultEndScene">
     <h1>BEAUTIFUL DISASTER</h1>
-    <p>You turned chaos into a lucky twist and somehow made the messiest moment become the highlight of your day.</p>
+    <p>You turned chaos into a lucky twist and somehow made an inconsequential moment turn ur life around.</p>
     <button onclick="showScene('scene1')">Restart</button>
 </div>
 
@@ -357,6 +366,6 @@
     </div>
 
 </div>
-        <script src="perfect day.js"></script>
+        <script src="style.js"></script>
     </body>
 </html>
